@@ -1,0 +1,3041 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NTRCA আর্টস বিভাগ বই সেট – Boibari.com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="icon"
+      href="https://storage.biddabari.online/biddabari-bucket/uploads/all/4PCgKQGv93MGiJXMIdyMFGboRpRR2GV8YNam0JIE.webp"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Hind+Siliguri:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Anek Bangla", sans-serif;
+        color: #140a08;
+        padding-bottom: 76px;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      :root {
+        --g-900: #7a1829;
+        --g-800: #bb2c49;
+        --g-700: #af2031;
+        --g-600: #cd2a3d;
+        --g-500: #eb4d46;
+        --g-100: #f9d7d3;
+        --g-50: #fef0ee;
+        --gold: #7a1829;
+        --gold-bg: #facc15;
+      }
+
+      .img-placeholder {
+        background-color: #fef0ee;
+        background-image:
+          linear-gradient(45deg, #f9d7d3 25%, transparent 25%),
+          linear-gradient(-45deg, #f9d7d3 25%, transparent 25%),
+          linear-gradient(45deg, transparent 75%, #f9d7d3 75%),
+          linear-gradient(-45deg, transparent 75%, #f9d7d3 75%);
+        background-size: 20px 20px;
+        background-position:
+          0 0,
+          0 10px,
+          10px -10px,
+          -10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #af2031;
+        text-align: center;
+        font-size: 0.82rem;
+        font-weight: 600;
+        padding: 1rem;
+      }
+
+      /* ══ URGENCY BAR ══ */
+      @keyframes shimmer {
+        0% {
+          background-position: -200% 0;
+        }
+        100% {
+          background-position: 200% 0;
+        }
+      }
+      .urgency-bar {
+        background: linear-gradient(
+          90deg,
+          #d4304a,
+          #cd2a3d,
+          #eb4d46,
+          #cd2a3d,
+          #d4304a
+        );
+        background-size: 300% 100%;
+        animation: shimmer 4s linear infinite;
+        color: #fff;
+        padding: 11px 44px 11px 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 800;
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        overflow-x: auto;
+      }
+      .urgency-inner {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+      }
+      .urgency-msg {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+      .urgency-timer {
+        background: rgba(255, 255, 255, 0.18);
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        padding: 6px 22px;
+        border-radius: 20px;
+        font-weight: 800;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+      .urgency-btn {
+        background: #fff;
+        color: var(--g-700);
+        padding: 8px 18px;
+        border-radius: 20px;
+        font-weight: 800;
+        font-size: 15px;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        white-space: nowrap;
+        transition: 0.2s;
+        flex-shrink: 0;
+      }
+      .urgency-btn:hover {
+        transform: translateY(-1px);
+        color: var(--g-900);
+      }
+      .urgency-close {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.9);
+        color: var(--g-700);
+        border: none;
+        font-size: 11px;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        cursor: pointer;
+        line-height: 1;
+        transition: 0.2s;
+        padding: 0;
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .urgency-close:hover {
+        background: #fff;
+        transform: translateY(-50%) scale(1.08);
+      }
+      @media (max-width: 576px) {
+        .urgency-bar {
+          padding: 10px 42px 10px 10px;
+        }
+        .urgency-inner {
+          flex-wrap: wrap;
+          justify-content: center;
+          row-gap: 8px;
+        }
+        .urgency-msg {
+          flex: 0 0 100%;
+          justify-content: center;
+          font-size: 13px;
+        }
+        .urgency-close {
+          top: 12px;
+          transform: none;
+        }
+        .urgency-close:hover {
+          transform: scale(1.08);
+        }
+      }
+
+      /* ══ CTA PULSE ══ */
+      @keyframes pulseGreen {
+        0% {
+          box-shadow: 0 0 0 0 rgba(205, 42, 61, 0.5);
+        }
+        70% {
+          box-shadow: 0 0 0 12px rgba(205, 42, 61, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(205, 42, 61, 0);
+        }
+      }
+      .pulse-cta {
+        animation: pulseGreen 2s infinite;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+      .pulse-cta:hover {
+        animation: none;
+        transform: translateY(-2px);
+      }
+
+      @media (max-width: 380px) {
+        .hero-heading {
+          font-size: 1.15rem !important;
+          line-height: 1.45 !important;
+        }
+      }
+
+      /* ══ STICKY BOTTOM ORDER BAR — mobile ══ */
+      .sticky-order-bar {
+        display: none;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 40;
+        background: #fff;
+        /* border-top: 1px solid #f9d7d3; */
+        box-shadow: 0 -4px 14px rgba(0, 0, 0, 0.08);
+        padding: 12px 16px calc(10px + env(safe-area-inset-bottom));
+      }
+      .sticky-order-bar-inner {
+        max-width: 640px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .sticky-order-total {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.15;
+        flex-shrink: 0;
+      }
+      .sticky-order-total span:first-child {
+        font-size: 11px;
+        color: #6b7280;
+      }
+      .sticky-order-total span:last-child {
+        font-size: 17px;
+        font-weight: 800;
+        color: var(--g-700);
+      }
+      .sticky-order-btn {
+        flex: 1;
+        text-align: center;
+      }
+      @media (max-width: 767px) {
+        .sticky-order-bar {
+          display: block;
+        }
+      }
+      @media (min-width: 768px) {
+        body {
+          padding-bottom: 0;
+        }
+      }
+
+      /* ══ LIGHTBOX ══ */
+      .item-thumb-btn {
+        cursor: zoom-in;
+        border: none;
+        padding: 0;
+        background: none;
+        display: block;
+      }
+      .lightbox-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+        background: rgba(0, 0, 0, 0.85);
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+      }
+      .lightbox-overlay.active {
+        display: flex;
+      }
+      .lightbox-content {
+        max-width: 92vw;
+        max-height: 88vh;
+        position: relative;
+      }
+      .lightbox-content img {
+        max-width: 92vw;
+        max-height: 88vh;
+        border-radius: 10px;
+        object-fit: contain;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      }
+      .lightbox-close {
+        position: absolute;
+        top: -18px;
+        right: -18px;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #fff;
+        color: var(--g-700);
+        border: none;
+        font-size: 18px;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+      }
+      @media (max-width: 576px) {
+        .lightbox-close {
+          top: -14px;
+          right: 0;
+        }
+      }
+
+      /* ══ BOOK DETAILS MODAL ══ */
+      .book-detail-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 105;
+        background: rgba(122, 24, 41, 0.5);
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+      }
+      .book-detail-overlay.active {
+        display: flex;
+      }
+      .book-detail-modal {
+        width: 100%;
+        max-width: 560px;
+        max-height: 88vh;
+        overflow-y: auto;
+        background: #fff;
+        border-radius: 16px;
+        position: relative;
+        padding: 26px 22px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      }
+      .book-detail-close {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: none;
+        background: var(--g-50);
+        color: var(--g-700);
+        font-size: 16px;
+        font-weight: 800;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .book-detail-close:hover {
+        background: var(--g-100);
+      }
+      .book-detail-modal h3 {
+        font-size: 17px;
+        font-weight: 800;
+        color: #140a08;
+        margin: 0 26px 10px 0;
+        line-height: 1.4;
+      }
+      .book-detail-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        background: var(--g-50);
+        color: var(--g-700);
+        font-size: 12px;
+        font-weight: 700;
+        padding: 3px 10px;
+        border-radius: 20px;
+        margin-bottom: 12px;
+      }
+      .book-detail-desc {
+        font-size: 14px;
+        color: #374151;
+        line-height: 1.7;
+        margin-bottom: 14px;
+      }
+      .book-detail-feat-title {
+        font-size: 14px;
+        font-weight: 800;
+        color: #140a08;
+        margin-bottom: 8px;
+      }
+      .book-detail-feat-list {
+        list-style: none;
+        margin: 0 0 16px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+      }
+      .book-detail-feat-list li {
+        display: flex;
+        gap: 8px;
+        font-size: 13.5px;
+        color: #374151;
+        line-height: 1.5;
+      }
+      .book-detail-feat-list li::before {
+        content: "✔";
+        color: var(--g-600);
+        font-weight: 800;
+        flex-shrink: 0;
+      }
+
+      /* ══ SECTION LABEL/TITLE ══ */
+      .sec-title-wrap {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 0 12px;
+      }
+      .sec-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: var(--g-50);
+        color: var(--g-700);
+        padding: 5px 14px;
+        border-radius: 50px;
+        font-size: 13px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        border: 1px solid var(--g-100);
+      }
+      .sec-h2 {
+        font-size: clamp(1.4rem, 4vw, 2.1rem);
+        font-weight: 800;
+        color: #140a08;
+        line-height: 1.3;
+        margin-bottom: 8px;
+      }
+      .sec-h2 span {
+        color: var(--g-700);
+      }
+      .sec-desc {
+        font-size: 15px;
+        color: #6b5651;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      /* ══ BOOK PRODUCT CARDS ══ */
+      .prod-card {
+        background: #fff;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1.5px solid #f1f5f9;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s;
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .prod-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+        border-color: var(--g-500);
+      }
+      .prod-card.selected {
+        border-color: var(--g-600);
+        box-shadow: 0 0 0 3px rgba(205, 42, 61, 0.14);
+      }
+      .prod-hot {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 5;
+        background: linear-gradient(135deg, #d4304a, #af2031);
+        color: #fff;
+        padding: 3px 9px;
+        border-radius: 20px;
+        font-size: 11px;
+        font-weight: 800;
+        box-shadow: 0 3px 8px rgba(205, 42, 61, 0.4);
+        display: none;
+      }
+      .prod-hot.show {
+        display: block;
+      }
+      .prod-img-wrap {
+        width: 100%;
+        aspect-ratio: 1/1;
+        overflow: hidden;
+        background: var(--g-50);
+        cursor: zoom-in;
+      }
+      .prod-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s;
+      }
+      .prod-card:hover .prod-img {
+        transform: scale(1.05);
+      }
+      .prod-body {
+        padding: 12px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      .prod-name {
+        font-size: 14px;
+        font-weight: 700;
+        color: #140a08;
+        margin-bottom: 6px;
+        line-height: 1.35;
+        min-height: 38px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      @media (min-width: 640px) {
+        .prod-name {
+          font-size: 15.5px;
+        }
+      }
+      .prod-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        background: var(--g-50);
+        color: var(--g-700);
+        font-size: 11px;
+        font-weight: 700;
+        padding: 3px 10px;
+        border-radius: 20px;
+        margin: 0 auto 8px;
+        width: fit-content;
+      }
+      .prod-price-row {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 6px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+      }
+      .prod-orig {
+        font-size: 12px;
+        color: #94a3b8;
+        font-weight: 400;
+        position: relative;
+      }
+      .prod-orig::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -3%;
+        width: 106%;
+        height: 1.5px;
+        background: var(--gold);
+        transform: rotate(-12deg);
+      }
+      .prod-sale {
+        font-size: 18px;
+        font-weight: 800;
+        color: var(--g-700);
+      }
+      @media (min-width: 640px) {
+        .prod-sale {
+          font-size: 20px;
+        }
+      }
+      .prod-save {
+        background: var(--gold-bg);
+        color: var(--gold);
+        padding: 2px 8px;
+        border-radius: 6px;
+        font-size: 11px;
+        font-weight: 700;
+        border: 1px solid #fde68a;
+      }
+      .prod-add-btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        background: linear-gradient(135deg, #d4304a, #af2031);
+        color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 700;
+        transition: all 0.25s;
+        margin-top: auto;
+      }
+      .prod-add-btn:hover {
+        opacity: 0.9;
+        transform: translateY(-1px);
+        color: #fff;
+      }
+      .prod-add-btn.added {
+        background: linear-gradient(135deg, #af2031, #9c1a2d);
+      }
+      .prod-qty-ctrl {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        background: var(--g-50);
+        border-radius: 8px;
+        overflow: hidden;
+        margin-top: 8px;
+        border: 1.5px solid var(--g-100);
+      }
+      .prod-qty-ctrl.show {
+        display: flex;
+      }
+      .prod-qty-btn {
+        width: 32px;
+        height: 32px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--g-700);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.15s;
+      }
+      .prod-qty-btn:hover {
+        background: var(--g-100);
+      }
+      .prod-qty-val {
+        font-size: 15px;
+        font-weight: 700;
+        color: #140a08;
+      }
+      .prod-detail-btn {
+        width: 100%;
+        background: none;
+        border: none;
+        color: var(--g-700);
+        font-size: 12px;
+        font-weight: 700;
+        text-decoration: underline;
+        cursor: pointer;
+        padding: 2px 0 8px;
+      }
+      .prod-detail-btn:hover {
+        color: var(--g-900);
+      }
+
+      /* ══ FEATURES ══ */
+      .features-section {
+        padding: 44px 16px;
+        background: var(--g-50);
+      }
+      .feat-card {
+        background: #fff;
+        border: 1px solid #f9d7d3;
+        border-radius: 14px;
+        padding: 20px 14px;
+        text-align: center;
+        transition: all 0.25s;
+        height: 100%;
+      }
+      .feat-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 24px rgba(205, 42, 61, 0.1);
+        border-color: var(--g-500);
+      }
+      .feat-icon-wrap {
+        width: 54px;
+        height: 54px;
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 10px;
+        font-size: 24px;
+        background: var(--g-100);
+      }
+      .feat-title {
+        font-size: 15.5px;
+        font-weight: 700;
+        color: #140a08;
+        line-height: 1.35;
+        margin-bottom: 4px;
+      }
+      .feat-sub {
+        font-size: 12.5px;
+        color: #78625c;
+        line-height: 1.5;
+      }
+
+      /* ══ CHECKOUT ══ */
+      #Checkout {
+        background: var(--g-50);
+        padding: 30px 16px 50px;
+      }
+      .co-wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .co-heading {
+        font-size: 20px;
+        font-weight: 800;
+        color: #140a08;
+        margin-bottom: 6px;
+      }
+      .co-sub {
+        font-size: 14px;
+        color: #78625c;
+        margin-bottom: 20px;
+      }
+      .co-cart-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 24px;
+      }
+      .co-cols {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      @media (min-width: 768px) {
+        .co-cols {
+          flex-direction: row;
+          align-items: flex-start;
+        }
+      }
+      @media (min-width: 768px) {
+        .co-cart-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (min-width: 1024px) {
+        .co-cart-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      .co-cart-item {
+        background: #fff;
+        border: 1.5px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        transition: all 0.2s;
+        cursor: pointer;
+        position: relative;
+      }
+      .co-cart-item.in-cart {
+        border-color: var(--g-600);
+        background: var(--g-50);
+      }
+      .co-cart-item:hover {
+        border-color: var(--g-500);
+      }
+      .co-cart-cb {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 28px;
+        height: 28px;
+        border: 2px solid #cbd5e1;
+        border-radius: 8px;
+        background: #fff;
+        flex-shrink: 0;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.2s;
+        margin: 0;
+      }
+      .co-cart-cb:hover {
+        border-color: var(--g-500);
+      }
+      .co-cart-cb:checked {
+        background: var(--g-600);
+        border-color: var(--g-600);
+      }
+      .co-cart-cb:checked::after {
+        content: "";
+        position: absolute;
+        left: 9px;
+        top: 4px;
+        width: 7px;
+        height: 13px;
+        border: solid #fff;
+        border-width: 0 2.5px 2.5px 0;
+        transform: rotate(45deg);
+      }
+      .co-cart-img {
+        width: 64px;
+        height: 64px;
+        object-fit: cover;
+        border-radius: 6px;
+        background: var(--g-50);
+        flex-shrink: 0;
+        border: 1px solid var(--g-100);
+      }
+      .co-cart-body {
+        flex: 1;
+        min-width: 0;
+      }
+      .co-cart-name {
+        font-size: 13.5px;
+        font-weight: 700;
+        color: #140a08;
+        margin-bottom: 4px;
+        line-height: 1.25;
+      }
+      .co-cart-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 3px;
+        background: var(--g-50);
+        color: var(--g-700);
+        font-size: 10px;
+        font-weight: 700;
+        padding: 2px 8px;
+        border-radius: 20px;
+        margin-bottom: 4px;
+      }
+      .co-cart-badge {
+        display: none;
+        align-items: center;
+        gap: 3px;
+        background: linear-gradient(135deg, #d4304a, #af2031);
+        color: #fff;
+        font-size: 10px;
+        font-weight: 800;
+        padding: 3px 9px;
+        border-radius: 20px;
+        box-shadow: 0 3px 8px rgba(205, 42, 61, 0.4);
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 5;
+      }
+      .co-cart-badge.show {
+        display: inline-flex;
+      }
+      .co-cart-qw {
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--g-100);
+        border-radius: 6px;
+        overflow: hidden;
+        height: 28px;
+        background: #fff;
+        margin-top: 6px;
+        width: 82px;
+        cursor: default;
+      }
+      .co-cart-qb {
+        width: 26px;
+        height: 28px;
+        background: var(--g-50);
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--g-700);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.15s;
+      }
+      .co-cart-qb:hover {
+        background: var(--g-100);
+      }
+      .co-cart-qi {
+        width: 30px;
+        height: 28px;
+        border: none;
+        border-left: 1px solid var(--g-100);
+        border-right: 1px solid var(--g-100);
+        text-align: center;
+        font-size: 13px;
+        outline: none;
+        color: #140a08;
+        background: #fff;
+      }
+      .co-cart-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 6px;
+        flex-shrink: 0;
+      }
+      .co-cart-total {
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--g-700);
+        white-space: nowrap;
+      }
+      .co-cart-total-label {
+        font-size: 10px;
+        font-weight: 600;
+        color: #94a3b8;
+        white-space: nowrap;
+      }
+
+      .ship-section {
+        background: #fff;
+        padding: 14px;
+        border-radius: 12px;
+        border: 1px solid #f9d7d3;
+        margin-bottom: 16px;
+      }
+      .ship-h {
+        font-size: 16px;
+        font-weight: 700;
+        color: #140a08;
+        margin-bottom: 10px;
+        padding-bottom: 7px;
+        border-bottom: 1px solid var(--g-50);
+      }
+      .ship-lbl {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 11px 12px;
+        margin-bottom: 8px;
+        background: #f8fafc;
+        border: 1.5px solid #e2e8f0;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .ship-lbl:last-child {
+        margin-bottom: 0;
+      }
+      .ship-lbl.active,
+      .ship-lbl:hover {
+        border-color: var(--g-500);
+        background: var(--g-50);
+      }
+      .ship-lbl input[type="radio"] {
+        width: 16px;
+        height: 16px;
+        accent-color: var(--g-600);
+        flex-shrink: 0;
+      }
+      .ship-icon {
+        width: 36px;
+        height: 36px;
+        background: var(--g-100);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        flex-shrink: 0;
+      }
+      .ship-info strong {
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+        color: #140a08;
+      }
+
+      .cf {
+        margin-bottom: 14px;
+      }
+      .cf label {
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+        color: #374151;
+        margin-bottom: 5px;
+      }
+      .cf label .r {
+        color: #dc2626;
+      }
+      .cf input,
+      .cf textarea {
+        width: 100%;
+        padding: 11px 14px;
+        border: 1.5px solid #e2e8f0;
+        border-radius: 10px;
+        font-family: "Anek Bangla", sans-serif;
+        font-size: 15px;
+        outline: none;
+        color: #140a08;
+        background: #fff;
+        transition: all 0.2s;
+      }
+      .cf input:focus,
+      .cf textarea:focus {
+        border-color: var(--g-500);
+        box-shadow: 0 0 0 3px rgba(235, 77, 70, 0.12);
+      }
+      .cf input.err {
+        border-color: #dc2626;
+      }
+      .cf .emsg {
+        font-size: 12px;
+        color: #dc2626;
+        margin-top: 4px;
+        display: none;
+        font-weight: 500;
+      }
+      .cf .emsg.show {
+        display: block;
+      }
+      .cf textarea {
+        resize: vertical;
+        min-height: 68px;
+        font-size: 14px;
+      }
+
+      .ord-lbl {
+        font-size: 17px;
+        font-weight: 800;
+        color: #140a08;
+        margin-bottom: 12px;
+      }
+      .ord-box {
+        background: #fff;
+        border: 1px solid #f9d7d3;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 14px;
+      }
+      .otbl {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: "Hind Siliguri", sans-serif;
+      }
+      .otbl thead th {
+        background: var(--g-50);
+        padding: 10px 14px;
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--g-700);
+        text-align: left;
+        border-bottom: 1px solid var(--g-100);
+      }
+      .otbl thead th:last-child {
+        text-align: right;
+      }
+      .otbl tbody td {
+        padding: 11px 14px;
+        border-bottom: 1px solid #f8fafc;
+        font-size: 14px;
+        color: #334155;
+        vertical-align: middle;
+      }
+      .otbl tbody td:last-child {
+        text-align: right;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+      .otbl tfoot tr {
+        border-top: 1px solid #f1f5f9;
+      }
+      .otbl tfoot tr:first-child {
+        border-top: none;
+      }
+      .otbl tfoot td {
+        padding: 12px 14px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #64748b;
+      }
+      .otbl tfoot td:last-child {
+        text-align: right;
+        font-weight: 700;
+        color: #140a08;
+      }
+      .otbl .ttl-row td {
+        font-size: 16px;
+        font-weight: 800;
+        color: #140a08;
+        border-top: 2px solid #e2e8f0;
+        padding-top: 14px;
+      }
+      .dl-area {
+        font-size: 11px;
+        color: #64748b;
+        font-weight: 600;
+      }
+      .oi-wrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .oi-thumb-wrap {
+        position: relative;
+        flex-shrink: 0;
+      }
+      .oi-remove-btn {
+        position: absolute;
+        top: -7px;
+        left: -7px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: #dc2626;
+        color: #fff;
+        border: 2px solid #fff;
+        font-size: 10px;
+        font-weight: 800;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding: 0;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        z-index: 2;
+        transition:
+          transform 0.15s,
+          background 0.15s;
+      }
+      .oi-remove-btn:hover {
+        background: #af2031;
+        transform: scale(1.12);
+      }
+      .oi-img {
+        width: 42px;
+        height: 42px;
+        object-fit: cover;
+        border-radius: 5px;
+        background: var(--g-50);
+        border: 1px solid var(--g-100);
+        flex-shrink: 0;
+      }
+      .oi-nm {
+        font-size: 12px;
+        font-weight: 700;
+        color: #140a08;
+        line-height: 1.3;
+      }
+      .oi-tag {
+        font-size: 10px;
+        font-weight: 600;
+        color: var(--g-700);
+        margin-top: 2px;
+      }
+      .oi-qty {
+        font-size: 11px;
+        color: #94a3b8;
+        margin-top: 1px;
+      }
+
+      .pay-box {
+        background: #fff;
+        border: 1px solid #f9d7d3;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 14px;
+      }
+      .pay-hdr {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 14px;
+        border-bottom: 1px solid #f8fafc;
+      }
+      .pay-hdr input {
+        width: 16px;
+        height: 16px;
+        accent-color: var(--g-600);
+      }
+      .pay-hdr span {
+        font-size: 15px;
+        font-weight: 700;
+        color: #140a08;
+      }
+      .pay-body {
+        padding: 10px 14px;
+        background: var(--g-50);
+        font-size: 13px;
+        color: #6b5651;
+      }
+      .co-prv {
+        font-size: 11px;
+        color: #94a3b8;
+        margin-bottom: 14px;
+        line-height: 1.5;
+      }
+      .co-prv a {
+        color: var(--g-700);
+        text-decoration: underline;
+      }
+      .co-btn {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 800;
+        background: linear-gradient(135deg, #d4304a, #af2031);
+        color: #fff;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        animation: pulseGreen 2s infinite;
+        transition: all 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+      .co-btn:hover {
+        transform: scale(1.01);
+        animation: none;
+        box-shadow: 0 10px 24px rgba(205, 42, 61, 0.35);
+      }
+      .co-btn:disabled {
+        background: #cbd5e1;
+        color: #94a3b8;
+        cursor: not-allowed;
+        animation: none;
+        box-shadow: none;
+      }
+
+      .mobile-sticky {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9000;
+        background: #fff;
+        border-top: 1.5px solid var(--g-100);
+        padding: 10px 16px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        box-shadow: 0 -4px 20px rgba(205, 42, 61, 0.12);
+      }
+      @media (min-width: 768px) {
+        .mobile-sticky {
+          display: none;
+        }
+      }
+      .mobile-total {
+        font-size: 18px;
+        font-weight: 800;
+        color: #140a08;
+        flex-shrink: 0;
+      }
+      .mobile-total small {
+        display: block;
+        font-size: 11px;
+        font-weight: 500;
+        color: #64748b;
+      }
+      .mobile-order-btn {
+        flex: 1;
+        padding: 12px;
+        background: linear-gradient(135deg, #d4304a, #af2031);
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        transition: all 0.2s;
+        animation: pulseGreen 2s infinite;
+      }
+      .mobile-order-btn:disabled {
+        background: #cbd5e1;
+        cursor: not-allowed;
+        animation: none;
+      }
+      .saf {
+        color: var(--g-600);
+        font-weight: 700;
+      }
+      .sap {
+        color: #475569;
+        font-weight: 500;
+      }
+
+      /* ══ ORDER CONFIRMATION MODAL ══ */
+      #order-confirm-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(122, 24, 41, 0.5);
+        z-index: 9999;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+      }
+      #order-confirm-overlay.open {
+        display: flex;
+      }
+      .oc-modal {
+        width: 100%;
+        max-width: 520px;
+        max-height: 100vh;
+        overflow-y: auto;
+        background: #fff;
+        border-radius: 16px;
+        position: relative;
+        animation: ocPop 0.25s ease;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      }
+      @keyframes ocPop {
+        from {
+          opacity: 0;
+          transform: translateY(12px) scale(0.98);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+      .oc-close {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: none;
+        background: rgba(255, 255, 255, 0.55);
+        color: #334155;
+        font-size: 18px;
+        line-height: 1;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+      }
+      .oc-close:hover {
+        background: rgba(255, 255, 255, 0.85);
+      }
+      .oc-head {
+        background: var(--g-50);
+        padding: 32px 24px 28px;
+        text-align: center;
+        border-radius: 16px 16px 0 0;
+      }
+      .oc-check {
+        width: 64px;
+        height: 64px;
+        margin: 0 auto 14px;
+        border-radius: 50%;
+        background: var(--g-600);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .oc-check svg {
+        width: 30px;
+        height: 30px;
+      }
+      .oc-title {
+        font-size: 26px;
+        font-weight: 800;
+        color: var(--g-700);
+        margin: 0 0 2px;
+      }
+      .oc-sub {
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--g-800);
+        line-height: 1.7;
+        margin: 0;
+      }
+      .oc-body {
+        padding: 16px 18px 0;
+      }
+      .oc-meta {
+        background: #f1f5f9;
+        border-radius: 10px;
+        padding: 14px 16px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+      .oc-meta div {
+        min-width: 0;
+      }
+      .oc-meta .oc-label {
+        font-size: 11px;
+        color: #64748b;
+        margin-bottom: 3px;
+      }
+      .oc-meta .oc-value {
+        font-size: 12.5px;
+        font-weight: 700;
+        color: #0f172a;
+        word-break: break-word;
+      }
+      .oc-note {
+        font-size: 12.5px;
+        color: #475569;
+        margin-bottom: 16px;
+      }
+      .oc-details {
+        background: #f1f5f9;
+        border-radius: 10px;
+        padding: 16px;
+        margin-bottom: 16px;
+      }
+      .oc-details h4 {
+        font-size: 14px;
+        font-weight: 800;
+        color: #0f172a;
+        margin: 0 0 10px;
+      }
+      .oc-details table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 12.5px;
+      }
+      .oc-details th {
+        text-align: left;
+        font-size: 11px;
+        color: #64748b;
+        font-weight: 600;
+        padding-bottom: 6px;
+        border-bottom: 1px dashed #cbd5e1;
+      }
+      .oc-details th:last-child,
+      .oc-details td:last-child {
+        text-align: right;
+      }
+      .oc-details td {
+        padding: 7px 0;
+        border-bottom: 1px dashed #e2e8f0;
+        color: #334155;
+      }
+      .oc-row-tag {
+        font-size: 11px;
+        color: var(--g-700);
+        font-weight: 600;
+      }
+      .oc-details tr:last-child td {
+        border-bottom: none;
+      }
+      .oc-details tr.oc-total-row td {
+        font-weight: 800;
+        color: #0f172a;
+      }
+      .oc-ship-note {
+        color: #94a3b8;
+        font-size: 11px;
+      }
+      .oc-addr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        background: #f1f5f9;
+        border-radius: 10px;
+        padding: 16px;
+        margin-bottom: 22px;
+      }
+      .oc-addr h5 {
+        font-size: 12.5px;
+        font-weight: 800;
+        color: #0f172a;
+        margin: 0 0 8px;
+      }
+      .oc-addr p {
+        font-size: 12px;
+        color: #475569;
+        line-height: 1.6;
+        margin: 0;
+      }
+      .oc-banner {
+        background: linear-gradient(135deg, #d4304a, #af2031);
+        padding: 22px 20px;
+        text-align: center;
+        border-radius: 0 0 16px 16px;
+      }
+      .oc-banner p {
+        color: #fff;
+        font-weight: 700;
+        font-size: 13px;
+        margin: 0 0 14px;
+      }
+      .oc-shop-btn {
+        display: inline-block;
+        background: #fff;
+        color: var(--g-700);
+        font-weight: 800;
+        font-size: 13.5px;
+        padding: 10px 26px;
+        border-radius: 8px;
+        text-decoration: none;
+      }
+      .oc-shop-btn:hover {
+        background: var(--g-50);
+      }
+      @media (max-width: 420px) {
+        .oc-meta {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .oc-addr {
+          grid-template-columns: 1fr;
+        }
+      }
+      /* ===== Phone field (BD flag + +88) ===== */
+      .phone-group {
+        display: flex;
+        align-items: stretch;
+        border: 1.5px solid #e2e8f0;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #fff;
+        transition: all 0.2s;
+      }
+      .phone-group:focus-within {
+        border-color: var(--g-500);
+        box-shadow: 0 0 0 3px rgba(235, 77, 70, 0.12);
+      }
+      .phone-group:has(input.err) {
+        border-color: #dc2626;
+      }
+      .phone-prefix {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 0 12px;
+        background: var(--g-50);
+        border-right: 1.5px solid #e2e8f0;
+        flex-shrink: 0;
+      }
+      .phone-flag {
+        width: 26px;
+        height: 17px;
+        border-radius: 2px;
+        display: block;
+      }
+      .phone-code {
+        font-weight: 700;
+        font-size: 15px;
+        color: #140a08;
+      }
+      .cf .phone-group input,
+      .cf .phone-group input:focus,
+      .cf .phone-group input.err {
+        flex: 1;
+        min-width: 0;
+        width: auto;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        height: 46px;
+      }
+      .phone-hint {
+        margin-top: 4px;
+        font-size: 12.5px;
+        color: #9ca3af;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-[#140a08]">
+    <!-- ============ TOP URGENCY BAR ============ -->
+    <div class="urgency-bar" id="urgencyBar">
+      <div class="urgency-inner">
+        <span class="urgency-msg" id="urgencyMsg"
+          >📚 স্টক সীমিত, আজই সেট সংগ্রহ করুন</span
+        >
+        <span class="urgency-timer"
+          >⏱ <span id="ubh">00</span>:<span id="ubm">00</span>:<span id="ubs"
+            >00</span
+          ></span
+        >
+        <a href="#order-form" class="urgency-btn">অর্ডার করুন →</a>
+      </div>
+      <button
+        type="button"
+        class="urgency-close"
+        aria-label="বন্ধ করুন"
+        onclick="document.getElementById('urgencyBar').style.display = 'none'"
+      >
+        ✕
+      </button>
+    </div>
+
+    <!-- ============ HERO ============ -->
+    <section class="max-w-3xl mx-auto px-5 pt-10 pb-6 text-center">
+      <h1
+        class="hero-heading text-xl sm:text-2xl md:text-4xl font-extrabold leading-snug px-1"
+        style="word-break: keep-all; overflow-wrap: break-word"
+        data-text="heroHeadline"
+      ></h1>
+      <p
+        class="mt-2 text-gray-700 font-medium"
+        style="font-size: 1.05rem"
+        data-text="heroSub"
+      ></p>
+
+      <div
+        class="mt-8 border-4 rounded-xl max-w-md mx-auto p-4"
+        style="border-color: var(--g-600)"
+      >
+        <div
+          class="w-full rounded-lg overflow-hidden"
+          style="aspect-ratio: 4/4"
+          id="heroImgWrap"
+        >
+          <img
+            data-img="hero"
+            alt=""
+            class="w-full h-full object-cover rounded-lg"
+          />
+        </div>
+      </div>
+      <p class="mt-2 text-gray-600" data-text="tagline"></p>
+
+      <div class="mt-4 mx-auto w-full" style="max-width: 420px">
+        <a
+          href="#order-form"
+          class="pulse-cta flex items-center justify-center gap-2 text-white font-semibold px-8 py-3 rounded-md w-full"
+          style="background: linear-gradient(135deg, #d4304a, #af2031)"
+          ><svg
+            class="cart-icon"
+            fill="white"
+            width="20px"
+            height="20px"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z"
+            /></svg
+          >এখনই অর্ডার করুন</a
+        >
+      </div>
+
+      <!-- ============ CALL + WHATSAPP ============ -->
+      <div class="flex flex-col items-center gap-3 mt-4 mb-2">
+        <div class="flex gap-3 w-full" style="max-width: 420px">
+          <a
+            data-phone-href="tel"
+            class="font-bold px-4 py-3 rounded-md flex items-center justify-center gap-2 flex-1"
+            style="
+              background: var(--gold-bg);
+              color: var(--gold);
+              border: 1.5px solid #eab308;
+            "
+          >
+            📞 ফোন করুন
+          </a>
+          <a
+            data-whatsapp-href="wa"
+            target="_blank"
+            rel="noopener"
+            class="bg-green-500 hover:bg-green-600 text-white font-bold px-4 py-3 rounded-md flex items-center justify-center gap-2 flex-1"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.005c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.13-2.9-7-1.87-1.87-4.36-2.94-7-2.94zm0 18.13h-.005a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.37c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.83 2.42a8.17 8.17 0 0 1 2.41 5.82c0 4.54-3.7 8.22-8.24 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.4-.12-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.06-.39-2.01-1.24-.75-.66-1.25-1.48-1.4-1.73-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.89 2.41 1.02 2.58c.12.17 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"
+                fill="currentColor"
+              />
+            </svg>
+            হোয়াটসঅ্যাপ
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VIDEO / DEMO SECTION ============ -->
+    <section class="max-w-4xl mx-auto px-5 pb-10">
+      <div
+        id="video-player"
+        class="w-full aspect-video rounded-lg relative overflow-hidden bg-gray-200 cursor-pointer"
+        onclick="playDemoVideo()"
+      >
+        <img
+          data-img="videoThumbnail"
+          alt=""
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div
+            class="w-16 h-16 rounded-full flex items-center justify-center"
+            style="background: var(--g-600)"
+          >
+            <div
+              class="w-0 h-0 border-t-8 border-b-8 border-l-[14px] border-t-transparent border-b-transparent border-l-white ml-1"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTRO / DESCRIPTION ============ -->
+    <section class="py-12" style="background: var(--g-50)">
+      <div class="max-w-3xl mx-auto px-5 text-center">
+        <h2
+          class="text-xl md:text-2xl font-bold mb-4"
+          style="color: var(--g-800)"
+        >
+          আর্টস বিভাগের জন্য সম্পূর্ণ NTRCA প্রস্তুতি, একসাথে ১০টি বইয়ে
+        </h2>
+        <p class="text-gray-700 leading-relaxed" data-text="description"></p>
+      </div>
+    </section>
+
+    <!-- ============ BOOK PRODUCTS ============ -->
+    <section id="items" class="py-14 scroll-mt-24 sm:scroll-mt-16">
+      <div class="max-w-6xl mx-auto px-5">
+        <div class="sec-title-wrap">
+          <!-- <div class="sec-label">📖 বই সেট</div> -->
+          <h2 class="sec-h2">
+            আর্টস বিভাগের <span>১০টি বিষয়ভিত্তিক বই</span>
+          </h2>
+          <p class="sec-desc">
+            প্রয়োজন অনুযায়ী একটি, একাধিক বা সম্পূর্ণ সেট বেছে নিন প্রতিটি বই
+            আলাদাভাবেও অর্ডার করা যাবে
+          </p>
+        </div>
+        <div
+          class="row g-3 g-md-4"
+          id="products-grid"
+          style="
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+          "
+        ></div>
+      </div>
+      <style>
+        @media (min-width: 640px) {
+          #products-grid {
+            grid-template-columns: repeat(3, 1fr) !important;
+          }
+        }
+        @media (min-width: 1024px) {
+          #products-grid {
+            grid-template-columns: repeat(4, 1fr) !important;
+          }
+        }
+      </style>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section
+      id="features"
+      class="features-section scroll-mt-24 sm:scroll-mt-16"
+    >
+      <div class="max-w-5xl mx-auto px-5">
+        <div class="sec-title-wrap">
+          <h2 class="sec-h2">
+            MCQ হোক বা লিখিত <span>প্রস্তুতি রাখুন নিশ্চিত</span>
+          </h2>
+          <p class="sec-desc" data-text="featuresIntro"></p>
+        </div>
+
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4"
+          id="features-grid"
+        ></div>
+      </div>
+    </section>
+
+    <!-- ============ CALL + WHATSAPP ============ -->
+    <div class="flex flex-col items-center gap-3 py-8 px-5">
+      <div class="mt-2 mx-auto w-full" style="max-width: 420px">
+        <a
+          href="#order-form"
+          class="pulse-cta flex items-center justify-center gap-2 text-white font-semibold px-8 py-3 rounded-md w-full"
+          style="background: linear-gradient(135deg, #d4304a, #af2031)"
+          ><svg
+            class="cart-icon"
+            fill="white"
+            width="20px"
+            height="20px"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z"
+            /></svg
+          >এখনই অর্ডার করুন</a
+        >
+      </div>
+      <div class="flex gap-3 w-full" style="max-width: 420px">
+        <a
+          data-phone-href="tel"
+          class="font-bold px-4 py-3 rounded-md flex items-center justify-center gap-2 flex-1"
+          style="
+            background: var(--gold-bg);
+            color: var(--gold);
+            border: 1.5px solid #eab308;
+          "
+        >
+          📞 ফোন করুন
+        </a>
+        <a
+          data-whatsapp-href="wa"
+          target="_blank"
+          rel="noopener"
+          class="bg-green-500 hover:bg-green-600 text-white font-bold px-4 py-3 rounded-md flex items-center justify-center gap-2 flex-1"
+        >
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.005c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.13-2.9-7-1.87-1.87-4.36-2.94-7-2.94zm0 18.13h-.005a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.37c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.83 2.42a8.17 8.17 0 0 1 2.41 5.82c0 4.54-3.7 8.22-8.24 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.4-.12-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.06-.39-2.01-1.24-.75-.66-1.25-1.48-1.4-1.73-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.89 2.41 1.02 2.58c.12.17 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"
+              fill="currentColor"
+            />
+          </svg>
+          হোয়াটসঅ্যাপ
+        </a>
+      </div>
+    </div>
+
+    <!-- ============ "🛒 Your Products" + CHECKOUT ============ -->
+    <div id="Checkout">
+      <div class="co-wrap" id="order-form">
+        <h2 class="co-heading">🛒 আপনার বই সমূহ</h2>
+        <p class="co-sub">
+          যে বই গুলো নিতে চান সিলেক্ট করুন, তারপর নিচে ফর্ম পূরণ করুন
+        </p>
+
+        <div class="co-cart-grid" id="co-cart-grid"></div>
+
+        <div class="co-cols">
+          <div class="co-left" style="flex: 1">
+            <div class="ship-section">
+              <div class="ship-h">🚚 ডেলিভারি এলাকা বেছে নিন</div>
+              <label class="ship-lbl active" id="sl-i">
+                <input
+                  type="radio"
+                  name="ship"
+                  value="in"
+                  checked
+                  onchange="setShip(60, 'in')"
+                />
+                <div class="ship-icon">🏙️</div>
+                <div class="ship-info"><strong>ঢাকার ভিতরে</strong></div>
+              </label>
+              <label class="ship-lbl" id="sl-o">
+                <input
+                  type="radio"
+                  name="ship"
+                  value="out"
+                  onchange="setShip(110, 'out')"
+                />
+                <div class="ship-icon">🗺️</div>
+                <div class="ship-info"><strong>ঢাকার বাহিরে</strong></div>
+              </label>
+            </div>
+
+            <div class="cf">
+              <label>আপনার নাম লিখুন <span class="r">*</span></label>
+              <input
+                type="text"
+                id="fn"
+                placeholder="Enter your full name"
+                autocomplete="given-name"
+                required
+              />
+              <div class="emsg" id="fe">আপনার সম্পূর্ণ নাম টি প্রয়োজন।</div>
+            </div>
+            <!-- <div class="cf">
+              <label>আপনার ফোন নাম্বারটি লিখুন <span class="r">*</span></label>
+              <input
+                type="tel"
+                id="ph"
+                placeholder="01XXXXXXXXX"
+                autocomplete="tel"
+                pattern="^01[3-9]\d{8}$"
+                title="আপনার ১১ সংখ্যার সঠিক ফোন নাম্বারটি প্রয়োজন।"
+              />
+              <div class="emsg" id="pe">
+                আপনার সঠিক ১১ সংখ্যার ফোন নাম্বারটি প্রয়োজন (01XXXXXXXXX)।
+              </div>
+            </div> -->
+            <div class="cf">
+              <label>আপনার ফোন নাম্বারটি লিখুন <span class="r">*</span></label>
+              <div class="phone-group">
+                <span class="phone-prefix">
+                  <svg
+                    class="phone-flag"
+                    viewBox="0 0 30 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <rect width="30" height="20" fill="#006a4e" />
+                    <circle cx="13" cy="10" r="6" fill="#f42a41" />
+                  </svg>
+                  <span class="phone-code">+88</span>
+                </span>
+                <input
+                  type="tel"
+                  id="ph"
+                  placeholder="01XXXXXXXXX"
+                  autocomplete="tel"
+                  inputmode="numeric"
+                />
+              </div>
+              <div class="phone-hint">১১ ডিজিটের নম্বর, যেমন 01712345678</div>
+              <div class="emsg" id="pe">
+                আপনার সঠিক ১১ সংখ্যার ফোন নাম্বারটি প্রয়োজন (01XXXXXXXXX)।
+              </div>
+            </div>
+
+            <div class="cf">
+              <label
+                >আপনার সম্পূর্ণ ঠিকানাটি লিখুন <span class="r">*</span></label
+              >
+              <textarea
+                id="ad"
+                placeholder="Enter your full address"
+                autocomplete="street-address"
+                rows="2"
+              ></textarea>
+              <div class="emsg" id="ae">আপনার সম্পূর্ণ ঠিকানাটি প্রয়োজন।</div>
+            </div>
+          </div>
+
+          <div
+            class="co-right"
+            style="width: 100%; max-width: 440px; flex-shrink: 0"
+          >
+            <div class="ord-lbl">📋 অর্ডার সামারি</div>
+            <div class="ord-box">
+              <table class="otbl">
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Subtotal</th>
+                  </tr>
+                </thead>
+                <tbody id="otb"></tbody>
+                <tfoot id="otf">
+                  <tr>
+                    <td>Subtotal</td>
+                    <td>৳<span id="st">0.00</span></td>
+                  </tr>
+                  <tr>
+                    <td id="dl">
+                      Delivery <span class="dl-area">(ঢাকার ভিতরে)</span>
+                    </td>
+                    <td><span id="dc" class="saf">৳60.00</span></td>
+                  </tr>
+                  <tr class="ttl-row">
+                    <td>Total</td>
+                    <td>৳<span id="tt">60.00</span></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <div class="pay-box">
+              <div class="pay-hdr">
+                <input type="radio" checked readonly /><span
+                  >💵 Cash on Delivery</span
+                >
+              </div>
+              <div class="pay-body">ডেলিভারির সময় টাকা পরিশোধ করুন।</div>
+            </div>
+            <p class="co-prv">
+              আপনার তথ্য শুধুমাত্র অর্ডার প্রসেস করার জন্য ব্যবহার করা হবে।
+              <a
+                href="https://boibari.com/privacy-policy"
+                target="_blank"
+                rel="noopener"
+                >Privacy Policy</a
+              >
+            </p>
+            <button class="co-btn" id="pb" onclick="placeOrder()">
+              <svg
+                class="cart-icon"
+                fill="white"
+                width="20px"
+                height="20px"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z"
+                />
+              </svg>
+              অর্ডার করুন &nbsp;৳<span id="bt">60.00</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="bg-black text-gray-400 text-sm pt-10 pb-5">
+      <div class="max-w-6xl mx-auto px-5">
+        <div class="grid gap-8 md:grid-cols-3">
+          <div>
+            <a
+              href="https://www.boibari.com"
+              target="_blank"
+              rel="noopener"
+              class="text-white text-2xl font-extrabold"
+            >
+              <img
+                src="https://storage.biddabari.online/biddabari-bucket/uploads/all/hjpORlcNFo3PgxYlIxXSa5DagZc4sI0fDdgHEhXB.webp"
+                alt=""
+                class="h-9 w-auto mb-3"
+              />
+            </a>
+            <p class="text-gray-500 leading-relaxed mt-3">
+              বিশ্বাস, মানসম্মত বই ও দ্রুত ডেলিভারির মাধ্যমে সারাদেশের পাঠক ও
+              পরীক্ষার্থীদের আস্থার প্রতিষ্ঠান। সঠিক দামে মানসম্মত বই ও আন্তরিক
+              সেবা নিশ্চিত করাই আমাদের অঙ্গীকার।
+            </p>
+          </div>
+          <div>
+            <h5 class="text-white text-lg font-extrabold mb-3">যোগাযোগ</h5>
+            <p class="mb-1">
+              📞 <a href="tel:+8809644433302">+8809644433302 </a>
+            </p>
+            <p class="mb-1">
+              🌐
+              <a href="https://www.boibari.com" target="_blank" rel="noopener"
+                >www.boibari.com</a
+              >
+            </p>
+            <p class="mb-1">📍 ঢাকা, বাংলাদেশ</p>
+          </div>
+          <div>
+            <h5 class="text-white text-lg font-extrabold mb-3">দ্রুত লিংক</h5>
+            <p class="mb-1">
+              <a href="#items" class="hover:text-[#EB4D46]">বই সেট</a>
+            </p>
+            <p class="mb-1">
+              <a href="#features" class="hover:text-[#EB4D46]">বৈশিষ্ট্য</a>
+            </p>
+            <p class="mb-1">
+              <a href="#order-form" class="hover:text-[#EB4D46]">অর্ডার করুন</a>
+            </p>
+          </div>
+        </div>
+        <div
+          class="text-center"
+          style="
+            border-top: 1px solid #2b2b2b;
+            margin-top: 24px;
+            padding-top: 16px;
+            font-size: 0.82rem;
+            color: #8f8f8f;
+          "
+        >
+          Copyright © 2026 boibari.com All rights reserved
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============ STICKY BOTTOM ORDER BAR ============ -->
+    <div class="sticky-order-bar" id="stickyOrderBar">
+      <div class="sticky-order-bar-inner">
+        <div class="sticky-order-total">
+          <span>মোট মূল্য</span>
+          <span id="stickyTotal">৳60.00</span>
+        </div>
+        <!-- <a
+          href="#order-form"
+          class="sticky-order-btn pulse-cta text-white font-semibold py-3 rounded-md flex items-center justify-center gap-2"
+          style="background: linear-gradient(135deg, #D4304A, #AF2031)"
+          id="stickyOrderBtn"
+        >
+          <svg
+            class="cart-icon"
+            fill="white"
+            width="20px"
+            height="20px"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z"
+            />
+          </svg>
+          অর্ডার করুন
+        </a> -->
+        <button
+          type="button"
+          onclick="stickyOrder()"
+          class="sticky-order-btn pulse-cta text-white font-semibold py-3 rounded-md flex items-center justify-center gap-2"
+          style="background: linear-gradient(135deg, #d4304a, #af2031)"
+          id="stickyOrderBtn"
+        >
+          <svg
+            class="cart-icon"
+            fill="white"
+            width="20px"
+            height="20px"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z"
+            />
+          </svg>
+          অর্ডার করুন
+        </button>
+      </div>
+    </div>
+
+    <!-- ============ IMAGE ZOOM LIGHTBOX ============ -->
+    <div
+      class="lightbox-overlay"
+      id="lightboxOverlay"
+      onclick="if (event.target === this) closeLightbox();"
+    >
+      <div class="lightbox-content">
+        <button
+          type="button"
+          class="lightbox-close"
+          aria-label="বন্ধ করুন"
+          onclick="closeLightbox()"
+        >
+          ✕
+        </button>
+        <img id="lightboxImg" src="" alt="" />
+      </div>
+    </div>
+
+    <!-- ============ BOOK DETAILS MODAL ============ -->
+    <div
+      class="book-detail-overlay"
+      id="bookDetailOverlay"
+      onclick="if (event.target === this) closeBookDetails();"
+    >
+      <div class="book-detail-modal">
+        <button
+          type="button"
+          class="book-detail-close"
+          aria-label="বন্ধ করুন"
+          onclick="closeBookDetails()"
+        >
+          ✕
+        </button>
+        <div id="bookDetailContent"></div>
+      </div>
+    </div>
+
+    <!-- ============ ORDER CONFIRMATION MODAL ============ -->
+    <div id="order-confirm-overlay">
+      <div class="oc-modal">
+        <button
+          type="button"
+          class="oc-close"
+          onclick="closeOrderConfirmation()"
+          aria-label="Close"
+        >
+          ✕
+        </button>
+        <div class="oc-head">
+          <div class="oc-check">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M5 13l4 4L19 7"
+                stroke="#fff"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h3 class="oc-title">অভিনন্দন</h3>
+          <p class="oc-sub">আপনার অর্ডারটি সফলভাবে সম্পন্ন হয়েছে। ধন্যবাদ।</p>
+        </div>
+        <div class="oc-body">
+          <div class="oc-meta">
+            <div>
+              <div class="oc-label">Order number:</div>
+              <div class="oc-value" id="oc-order-number">—</div>
+            </div>
+            <div>
+              <div class="oc-label">Date:</div>
+              <div class="oc-value" id="oc-order-date">—</div>
+            </div>
+            <div>
+              <div class="oc-label">Total:</div>
+              <div class="oc-value" id="oc-order-total">—</div>
+            </div>
+            <div>
+              <div class="oc-label">Payment method:</div>
+              <div class="oc-value">Cash on delivery</div>
+            </div>
+          </div>
+          <p class="oc-note">ডেলিভারির সময় টাকা পরিশোধ করুন।</p>
+          <div class="oc-details">
+            <h4>Order details</h4>
+            <table>
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody id="oc-order-rows"></tbody>
+              <tbody>
+                <tr>
+                  <td>Subtotal:</td>
+                  <td id="oc-subtotal"></td>
+                </tr>
+                <tr>
+                  <td>Shipping:</td>
+                  <td>
+                    <span id="oc-shipping"></span>
+                    <span class="oc-ship-note" id="oc-shipping-area"></span>
+                  </td>
+                </tr>
+                <tr class="oc-total-row">
+                  <td>Total:</td>
+                  <td id="oc-total"></td>
+                </tr>
+                <tr>
+                  <td>Payment method:</td>
+                  <td>Cash on delivery</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="oc-addr">
+            <div>
+              <h5>Billing address</h5>
+              <p id="oc-billing">—</p>
+            </div>
+            <div>
+              <h5>Phone</h5>
+              <p id="oc-phone">—</p>
+            </div>
+          </div>
+        </div>
+        <div class="oc-banner">
+          <p>আমাদের অন্যান্য বই ও পণ্যগুলো দেখতে ভিজিট করুন</p>
+          <a
+            href="https://boibari.com"
+            target="_blank"
+            rel="noopener"
+            class="oc-shop-btn"
+            >🛍️ শপ দেখুন</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script>
+      /* ══════════════════════════════════════════════════════════
+         CONFIG — edit these fields freely (header text, hero image,
+         video id, intro copy) without touching layout/logic below.
+      ══════════════════════════════════════════════════════════ */
+      const CONFIG = {
+        phone: "09644433302",
+        whatsappPhone: "01896060865",
+        urgencyText: "📚 স্টক সীমিত, আজই সংগ্রহ করুন",
+        heroHeadline: "আপনি কি এবারই প্রথম NTRCA পরীক্ষা দিচ্ছেন?",
+        heroSub:
+          "আর্টস (মানবিক ও সামাজিক) বিভাগের Subjective (সৃজনশীল ও রচনামূলক) প্রশ্নের জন্য সম্পূর্ণ প্রস্তুতি একসাথে ১০টি বই নিয়ে",
+        tagline: "১০-ইন-১ আর্টস বিভাগ বই সেট",
+        demoVideoId: "LdwKXIpEUdY",
+        description:
+          "আপনি হয়তো NTRCA পরীক্ষা এবারই প্রথম দিবেন? আপনার সেগমেন্টে Subjective ভালো বই খুঁজছেন কি? আপনি যদি এবারের আর্টস বিভাগের প্রার্থী হয়ে থাকেন, তাহলে এই বইগুলো থেকে আপনার বইটি বেছে নিতে হবে। এবারের NTRCA পরীক্ষা MCQ নাকি লিখিত (Written) পদ্ধতিতে হবে তা নিয়ে কর্তৃপক্ষ এখনো পর্যন্ত কোনো চূড়ান্ত সিদ্ধান্ত জানায়নি তবে যেকোনো পদ্ধতির জন্যই প্রস্তুতি নিশ্চিত রাখতে সৃজনশীল ও রচনামূলক (Subjective) ধাঁচের মানসম্মত বই হাতে রাখা জরুরি।",
+        featuresIntro:
+          "পরীক্ষার ধরন যাই হোক না কেন, সৃজনশীল প্রশ্নে দক্ষতা অর্জন করাই সবচেয়ে নিরাপদ প্রস্তুতি — এই বই সেট সেই লক্ষ্যেই সাজানো।",
+        // TODO: hero ছবির লিংক বসান (খালি থাকলে placeholder দেখাবে)
+        images: {
+          hero: "https://storage.biddabari.online/biddabari-bucket/uploads/all/boibari_asset/NTRCA_Subjective/Arts/hero_arts.webp",
+        },
+      };
+
+      /* ══ 10 BOOKS — single source of truth (product grid + checkout both render from this).
+         `img` is empty for now → placeholder shows. Fill in each cover URL when ready.
+         `orig`, `desc` and `features` are optional. ══ */
+      const PRODUCTS = [
+        {
+          id: 1,
+          sku: "BB09",
+          name: "১৯তম শিক্ষক নিবন্ধন বিষয়ভিত্তিক (বাংলা)",
+          tag: "স্কুল পর্যায়",
+          price: 310,
+          img: "https://storage.biddabari.online/biddabari-bucket/uploads/all/boibari_asset/NTRCA_Subjective/Arts/bangla.webp",
+          desc: "বিসিএস ক্যাডার এবং NTRCA-এর বিষয়ভিত্তিক সফল স্যারদের তত্ত্বাবধানে রচিত এই বইটি ১৯তম শিক্ষক নিবন্ধন পরীক্ষার বাংলা বিষয়ে স্কুল পর্যায়ের পরীক্ষার্থীদের জন্য একটি পূর্ণাঙ্গ প্রস্তুতি গাইড। NTRCA স্কুল পর্যায়ের বাংলা পরীক্ষায় ভালো ফলাফল করতে চাইলে এই বইটি হতে পারে আপনার নির্ভরযোগ্য প্রস্তুতি সঙ্গী।",
+          features: [
+            "অধ্যায়ভিত্তিক গুরুত্বপূর্ণ ও বিশ্লেষণধর্মী আলোচনা",
+            "প্রসিদ্ধ স্কলারদের গ্রন্থ থেকে সংগৃহীত এক কথায় প্রশ্নোত্তর সংযোজন",
+            "প্রতিটি অধ্যায়ের শেষে কমনোপযোগী MCQ সংযোজন",
+            'প্রতিটি অধ্যায়ের শেষে "Test Yourself" নামে ১০ নম্বরের কুইজ ও ব্যাখ্যাসহ সমাধান',
+            "বইয়ের শেষে বিসিএস ক্যাডার স্যারদের সমন্বয়ে প্রণীত অতি গুরুত্বপূর্ণ ৪০০টি বিশেষ MCQ সংযোজন",
+            "৪৯তম বিসিএস পরীক্ষার বিষয়ভিত্তিক (বাংলা) প্রশ্ন সমাধান",
+          ],
+        },
+        {
+          id: 2,
+          sku: "BB11",
+          name: "১৯তম শিক্ষক নিবন্ধন বিষয়ভিত্তিক (ইংরেজি)",
+          tag: "স্কুল পর্যায়",
+          price: 380,
+          img: "https://storage.biddabari.online/biddabari-bucket/uploads/all/boibari_asset/NTRCA_Subjective/Arts/english.webp",
+          desc: "বিসিএস ক্যাডার এবং NTRCA-এর বিষয়ভিত্তিক সফল স্যারদের তত্ত্বাবধানে রচিত এই বইটি ১৯তম শিক্ষক নিবন্ধন পরীক্ষার ইংরেজি বিষয়ে স্কুল পর্যায়ের পরীক্ষার্থীদের জন্য একটি পূর্ণাঙ্গ প্রস্তুতি গাইড। NTRCA স্কুল পর্যায়ের ইংরেজি পরীক্ষায় ভালো ফলাফল করতে চাইলে এই বইটি হতে পারে আপনার নির্ভরযোগ্য প্রস্তুতি সঙ্গী।",
+          features: [
+            "অধ্যায়ভিত্তিক MCQ প্রশ্নের বিশ্লেষণধর্মী বিস্তারিত আলোচনা, যা শুধু উত্তর নয়, কনসেপ্ট পরিষ্কার করতে সাহায্য করবে",
+            "অতি গুরুত্বপূর্ণ কমনোপযোগী তথ্যগুলো এক নজরে, সহজভাবে এক কথায় সাজানো, দ্রুত রিভিশনের জন্য",
+            "প্রতিটি অধ্যায়ের শেষে বাছাইকৃত ও গুরুত্বপূর্ণ MCQ প্রশ্ন সংযোজন",
+            "বইয়ের শেষে প্রায় ৭০০টি কমনোপযোগী তথ্য (One Word Q&A আকারে)",
+            "৪৯তম (বিশেষ) বিসিএস পরীক্ষার ইংরেজি প্রশ্নের পূর্ণাঙ্গ সমাধান",
+            "NTRCA লিখিত (ইংরেজি) পরীক্ষার জন্য একক পূর্ণাঙ্গ গাইড, প্রিলি ও লিখিত দুটোর প্রস্তুতিই এক বইয়ে",
+          ],
+        },
+        {
+          id: 3,
+          sku: "BB05",
+          name: "১৯তম শিক্ষক নিবন্ধন বিষয়ভিত্তিক (ইতিহাস)",
+          tag: "কলেজ পর্যায়",
+          price: 310,
+          img: "https://storage.biddabari.online/biddabari-bucket/uploads/all/boibari_asset/NTRCA_Subjective/Arts/history.webp",
+          desc: "বিসিএস ক্যাডার এবং NTRCA-এর বিষয়ভিত্তিক সফল স্যারদের তত্ত্বাবধানে রচিত এই বইটি ১৯তম শিক্ষক নিবন্ধন পরীক্ষার ইতিহাস বিষয়ে কলেজ পর্যায়ের পরীক্ষার্থীদের জন্য একটি পূর্ণাঙ্গ প্রস্তুতি গাইড। NTRCA কলেজ পর্যায়ের ইতিহাস পরীক্ষায় ভালো ফলাফল করতে চাইলে এই বইটি হতে পারে আপনার নির্ভরযোগ্য প্রস্তুতি সঙ্গী।",
+          features: [
+            "অধ্যায়ভিত্তিক গুরুত্বপূর্ণ ও বিশ্লেষণধর্মী আলোচনা",
+            "প্রসিদ্ধ স্কলারদের গ্রন্থ থেকে সংগৃহীত এক কথায় প্রশ্নোত্তর সংযোজন",
+            "প্রতিটি অধ্যায়ের শেষে কমনোপযোগী MCQ সংযোজন",
+            'প্রতিটি অধ্যায়ের শেষে "Test Yourself" নামে ১০ নম্বরের কুইজ ও ব্যাখ্যাসহ সমাধান',
+            "বইয়ের শেষে বিসিএস ক্যাডার স্যারদের সমন্বয়ে প্রণীত অতি গুরুত্বপূর্ণ ৩০০টি বিশেষ MCQ সংযোজন",
+            "৪৯তম বিসিএস পরীক্ষার বিষয়ভিত্তিক (ইতিহাস) প্রশ্ন সমাধান",
+          ],
+        },
+        {
+          id: 4,
+          sku: "390",
+          name: "১৯তম শিক্ষক নিবন্ধন বিষয়ভিত্তিক (ইসলামের ইতিহাস ও সংস্কৃতি)",
+          tag: "কলেজ পর্যায়",
+          price: 390,
+          img: "https://storage.biddabari.online/biddabari-bucket/uploads/all/boibari_asset/NTRCA_Subjective/Arts/islamic_history.webp",
+          desc: "বিসিএস ক্যাডার এবং NTRCA-এর বিষয়ভিত্তিক সফল স্যারদের তত্ত্বাবধানে রচিত এই বইটি ১৯তম শিক্ষক নিবন্ধন পরীক্ষার ইসলামের ইতিহাস ও সংস্কৃতি বিষয়ে কলেজ পর্যায়ের পরীক্ষার্থীদের জন্য একটি পূর্ণাঙ্গ প্রস্তুতি গাইড। NTRCA কলেজ পর্যায়ের ইসলামের ইতিহাস ও সংস্কৃতি পরীক্ষায় ভালো ফলাফল করতে চাইলে এই বইটি হতে পারে আপনার নির্ভরযোগ্য প্রস্তুতি সঙ্গী।",
+          features: [
+            "অধ্যায়ভিত্তিক গুরুত্বপূর্ণ ও বিশ্লেষণধর্মী আলোচনা",
+            "প্রসিদ্ধ স্কলারদের গ্রন্থ থেকে সংগৃহীত এক কথায় প্রশ্নোত্তর সংযোজন",
+            "প্রতিটি অধ্যায়ের শেষে কমনোপযোগী MCQ সংযোজন",
+            'প্রতিটি অধ্যায়ের শেষে "Test Yourself" নামে ১০ নম্বরের কুইজ ও ব্যাখ্যাসহ সমাধান',
+            "বইয়ের শেষে বিসিএস ক্যাডার স্যারদের সমন্বয়ে প্রণীত অতি গুরুত্বপূর্ণ ৫০০টি বিশেষ MCQ সংযোজন",
+            "৪৯তম বিসিএস পরীক্ষার বিষয়ভিত্তিক (ইসলামের ইতিহাস ও সংস্কৃতি) প্রশ্ন সমাধান",
+          ],
+        },
+        {
+          id: 5,
+          sku: "BB07",
+          name: "১৯তম শিক্ষক নিবন্ধন বিষয়ভিত্তিক (রাষ্ট্রবিজ্ঞান)",
+          tag: "কলেজ পর্যায়",
+          price: 350,
+          img: "https://storage.biddabari.online/biddabari-bucket/uploads/all/boibari_asset/NTRCA_Subjective/Arts/political_science.webp",
+          desc: "বিসিএস ক্যাডার এবং NTRCA-এর বিষয়ভিত্তিক সফল স্যারদের তত্ত্বাবধানে রচিত এই বইটি ১৯তম শিক্ষক নিবন্ধন পরীক্ষার রাষ্ট্রবিজ্ঞান বিষয়ে কলেজ পর্যায়ের পরীক্ষার্থীদের জন্য একটি পূর্ণাঙ্গ প্রস্তুতি গাইড। NTRCA কলেজ পর্যায়ের রাষ্ট্রবিজ্ঞান পরীক্ষায় ভালো ফলাফল করতে চাইলে এই বইটি হতে পারে আপনার নির্ভরযোগ্য প্রস্তুতি সঙ্গী।",
+          features: [
+            "অধ্যায়ভিত্তিক গুরুত্বপূর্ণ ও বিশ্লেষণধর্মী আলোচনা",
+            "প্রসিদ্ধ স্কলারদের গ্রন্থ থেকে সংগৃহীত এক কথায় প্রশ্নোত্তর সংযোজন",
+            "প্রতিটি অধ্যায়ের শেষে কমনোপযোগী MCQ সংযোজন",
+            'প্রতিটি অধ্যায়ের শেষে "Test Yourself" নামে ১০ নম্বরের কুইজ ও ব্যাখ্যাসহ সমাধান',
+            "বইয়ের শেষে বিসিএস ক্যাডার স্যারদের সমন্বয়ে প্রণীত অতি গুরুত্বপূর্ণ ৩০০টি বিশেষ MCQ সংযোজন",
+            "৪৯তম বিসিএস পরীক্ষার বিষয়ভিত্তিক (রাষ্ট্রবিজ্ঞান) প্রশ্ন সমাধান",
+          ],
+        },
+        {
+          id: 6,
+          sku: "BB14",
+          name: "১৯তম শিক্ষক নিবন্ধন বিষয়ভিত্তিক (সমাজবিজ্ঞান)",
+          tag: "কলেজ পর্যায়",
+          price: 310,
+          img: "https://storage.biddabari.online/biddabari-bucket/uploads/all/boibari_asset/NTRCA_Subjective/Arts/sociology.webp",
+          desc: "বিসিএস ক্যাডার এবং NTRCA-এর বিষয়ভিত্তিক সফল স্যারদের তত্ত্বাবধানে রচিত এই বইটি ১৯তম শিক্ষক নিবন্ধন পরীক্ষার সমাজবিজ্ঞান বিষয়ে কলেজ পর্যায়ের পরীক্ষার্থীদের জন্য একটি পূর্ণাঙ্গ প্রস্তুতি গাইড। NTRCA কলেজ পর্যায়ের সমাজবিজ্ঞান পরীক্ষায় ভালো ফলাফল করতে চাইলে এই বইটি হতে পারে আপনার নির্ভরযোগ্য প্রস্তুতি সঙ্গী।",
+          features: [
+            "অধ্যায়ভিত্তিক গুরুত্বপূর্ণ ও বিশ্লেষণধর্মী আলোচনা",
+            "প্রসিদ্ধ স্কলারদের গ্রন্থ থেকে সংগৃহীত এক কথায় প্রশ্নোত্তর সংযোজন",
+            "প্রতিটি অধ্যায়ের শেষে কমনোপযোগী MCQ সংযোজন",
+            'প্রতিটি অধ্যায়ের শেষে "Test Yourself" নামে ১০ নম্বরের কুইজ ও ব্যাখ্যাসহ সমাধান',
+            "বইয়ের শেষে বিসিএস ক্যাডার স্যারদের সমন্বয়ে প্রণীত অতি গুরুত্বপূর্ণ ৫০০টি বিশেষ MCQ সংযোজন",
+            "৪৯তম বিসিএস পরীক্ষার বিষয়ভিত্তিক (সমাজবিজ্ঞান) প্রশ্ন সমাধান",
+          ],
+        },
+        {
+          id: 7,
+          sku: "BB18",
+          name: "১৯তম শিক্ষক নিবন্ধন বিষয়ভিত্তিক (অর্থনীতি)",
+          tag: "কলেজ পর্যায়",
+          price: 340,
+          img: "https://storage.biddabari.online/biddabari-bucket/uploads/all/boibari_asset/NTRCA_Subjective/Arts/economics.webp",
+          desc: "বিসিএস ক্যাডার এবং NTRCA-এর বিষয়ভিত্তিক সফল স্যারদের তত্ত্বাবধানে রচিত এই বইটি ১৯তম শিক্ষক নিবন্ধন পরীক্ষার অর্থনীতি বিষয়ে কলেজ পর্যায়ের পরীক্ষার্থীদের জন্য একটি পূর্ণাঙ্গ প্রস্তুতি গাইড। NTRCA কলেজ পর্যায়ের অর্থনীতি পরীক্ষায় ভালো ফলাফল করতে চাইলে এই বইটি হতে পারে আপনার নির্ভরযোগ্য প্রস্তুতি সঙ্গী।",
+          features: [
+            "অধ্যায়ভিত্তিক গুরুত্বপূর্ণ ও বিশ্লেষণধর্মী আলোচনা",
+            "প্রসিদ্ধ স্কলারদের গ্রন্থ থেকে সংগৃহীত এক কথায় প্রশ্নোত্তর সংযোজন",
+            "প্রতিটি অধ্যায়ের শেষে কমনোপযোগী MCQ সংযোজন",
+            'প্রতিটি অধ্যায়ের শেষে "Test Yourself" নামে ১০ নম্বরের কুইজ ও ব্যাখ্যাসহ সমাধান',
+            "বইয়ের শেষে বিসিএস ক্যাডার স্যারদের সমন্বয়ে প্রণীত অতি গুরুত্বপূর্ণ ৬০০টি বিশেষ MCQ সংযোজন",
+            "৪৯তম বিসিএস পরীক্ষার বিষয়ভিত্তিক (লিখিত) প্রশ্ন সমাধান",
+          ],
+        },
+        {
+          id: 8,
+          sku: "BB17",
+          name: "১৯তম শিক্ষক নিবন্ধন বিষয়ভিত্তিক (ইসলাম শিক্ষা)",
+          tag: "কলেজ পর্যায়",
+          price: 400,
+          img: "https://storage.biddabari.online/biddabari-bucket/uploads/all/boibari_asset/NTRCA_Subjective/Arts/islamic_studies.webp",
+          desc: "বিসিএস ক্যাডার এবং NTRCA-এর বিষয়ভিত্তিক সফল স্যারদের তত্ত্বাবধানে রচিত এই বইটি ১৯তম শিক্ষক নিবন্ধন পরীক্ষার ইসলাম শিক্ষা বিষয়ে কলেজ পর্যায়ের পরীক্ষার্থীদের জন্য একটি পূর্ণাঙ্গ প্রস্তুতি গাইড। NTRCA কলেজ পর্যায়ের ইসলাম শিক্ষা পরীক্ষায় ভালো ফলাফল করতে চাইলে এই বইটি হতে পারে আপনার নির্ভরযোগ্য প্রস্তুতি সঙ্গী।",
+          features: [
+            "অধ্যায়ভিত্তিক গুরুত্বপূর্ণ ও বিশ্লেষণধর্মী আলোচনা",
+            "প্রসিদ্ধ স্কলারদের গ্রন্থ থেকে সংগৃহীত এক কথায় প্রশ্নোত্তর সংযোজন",
+            "প্রতিটি অধ্যায়ের শেষে কমনোপযোগী MCQ সংযোজন",
+            'প্রতিটি অধ্যায়ের শেষে "Test Yourself" নামে ১০ নম্বরের কুইজ ও ব্যাখ্যাসহ সমাধান',
+            "বইয়ের শেষে বিসিএস ক্যাডার স্যারদের সমন্বয়ে প্রণীত অতি গুরুত্বপূর্ণ ৫০০টি বিশেষ MCQ সংযোজন",
+            "৪৯তম বিসিএস পরীক্ষার বিষয়ভিত্তিক (ইসলাম শিক্ষা) প্রশ্ন সমাধান",
+          ],
+        },
+        {
+          id: 9,
+          sku: "BB16",
+          name: "১৯তম শিক্ষক নিবন্ধন বিষয়ভিত্তিক (সহকারী মৌলভী)",
+          tag: "স্কুল পর্যায়",
+          price: 400,
+          img: "https://storage.biddabari.online/biddabari-bucket/uploads/all/boibari_asset/NTRCA_Subjective/Arts/assistant_moulovi.webp",
+          desc: "বিসিএস ক্যাডার এবং NTRCA-এর বিষয়ভিত্তিক সফল স্যারদের তত্ত্বাবধানে রচিত এই বইটি ১৯তম শিক্ষক নিবন্ধন পরীক্ষার সহকারী মৌলভী (বিষয়কোড-৩৩০) বিষয়ে স্কুল পর্যায়ের পরীক্ষার্থীদের জন্য একটি পূর্ণাঙ্গ প্রস্তুতি গাইড। NTRCA স্কুল পর্যায়ের সহকারী মৌলভী (বিষয়কোড-৩৩০) পরীক্ষায় ভালো ফলাফল করতে চাইলে এই বইটি হতে পারে আপনার নির্ভরযোগ্য প্রস্তুতি সঙ্গী।",
+          features: [
+            "অধ্যায়ভিত্তিক গুরুত্বপূর্ণ ও বিশ্লেষণধর্মী আলোচনা",
+            "প্রসিদ্ধ স্কলারদের গ্রন্থ থেকে সংগৃহীত এক কথায় প্রশ্নোত্তর সংযোজন",
+            "প্রতিটি অধ্যায়ের শেষে কমনোপযোগী MCQ সংযোজন",
+            'প্রতিটি অধ্যায়ের শেষে "Test Yourself" নামে ১০ নম্বরের কুইজ ও ব্যাখ্যাসহ সমাধান',
+            "বইয়ের শেষে বিসিএস ক্যাডার স্যারদের সমন্বয়ে প্রণীত অতি গুরুত্বপূর্ণ ৫০০টি বিশেষ MCQ সংযোজন",
+          ],
+        },
+        {
+          id: 10,
+          sku: "BB21",
+          name: "১৯তম শিক্ষক নিবন্ধন বিষয়ভিত্তিক (সামাজিক বিজ্ঞান)",
+          tag: "স্কুল পর্যায়",
+          price: 490,
+          img: "https://storage.biddabari.online/biddabari-bucket/uploads/all/boibari_asset/NTRCA_Subjective/Arts/social_science.webp",
+          desc: "বিসিএস ক্যাডার এবং NTRCA-এর বিষয়ভিত্তিক সফল স্যারদের তত্ত্বাবধানে রচিত এই বইটি ১৯তম শিক্ষক নিবন্ধন পরীক্ষার সামাজিক বিজ্ঞান বিষয়ে স্কুল পর্যায়ের পরীক্ষার্থীদের জন্য একটি পূর্ণাঙ্গ প্রস্তুতি গাইড। NTRCA স্কুল পর্যায়ের সামাজিক বিজ্ঞান পরীক্ষায় ভালো ফলাফল করতে চাইলে এই বইটি হতে পারে আপনার নির্ভরযোগ্য প্রস্তুতি সঙ্গী।",
+          features: [
+            "অধ্যায়ভিত্তিক গুরুত্বপূর্ণ ও বিশ্লেষণধর্মী আলোচনা",
+            "প্রসিদ্ধ স্কলারদের গ্রন্থ থেকে সংগৃহীত এক কথায় প্রশ্নোত্তর সংযোজন",
+            "প্রতিটি অধ্যায়ের শেষে কমনোপযোগী MCQ সংযোজন",
+            'প্রতিটি অধ্যায়ের শেষে "Test Yourself" নামে ১০ নম্বরের কুইজ ও ব্যাখ্যাসহ সমাধান',
+            "বইয়ের শেষে বিসিএস ক্যাডার স্যারদের সমন্বয়ে প্রণীত অতি গুরুত্বপূর্ণ ৫০০টি বিশেষ MCQ সংযোজন",
+          ],
+        },
+      ];
+      function getProduct(id) {
+        return PRODUCTS.find((p) => p.id === Number(id));
+      }
+
+      /* ══ FEATURES — freely edit ══ */
+      const FEATURES = [
+        {
+          icon: "🎯",
+          title: "আপডেটেড সিলেবাস অনুযায়ী",
+          sub: "সর্বশেষ NTRCA সিলেবাস মেনে সাজানো প্রশ্নোত্তর",
+        },
+        {
+          icon: "✍️",
+          title: "সৃজনশীল ও রচনামূলক সমাধান",
+          sub: "প্রতিটি Subjective প্রশ্নের বিস্তারিত ধাপে ধাপে উত্তর",
+        },
+        {
+          icon: "📚",
+          title: "বিষয়ভিত্তিক আলাদা বই",
+          sub: "আর্টস বিভাগের প্রতিটি বিষয়ের জন্য পৃথক বই",
+        },
+        {
+          icon: "📝",
+          title: "মডেল টেস্ট অন্তর্ভুক্ত",
+          sub: "নিজের প্রস্তুতি যাচাইয়ের জন্য অনুশীলনী ও মডেল টেস্ট",
+        },
+        {
+          icon: "👩‍🏫",
+          title: "অভিজ্ঞ শিক্ষকদের রচনা",
+          sub: "সহজবোধ্য ভাষায় লেখা, প্রথমবার পরীক্ষার্থীদের জন্য উপযোগী",
+        },
+        {
+          icon: "⏱️",
+          title: "দ্রুত রিভিশন উপযোগী",
+          sub: "সীমিত সময়ে কার্যকর রিভিশনের জন্য সংক্ষিপ্ত কাঠামো",
+        },
+        {
+          icon: "📦",
+          title: "মানসম্মত বাঁধাই",
+          sub: "দীর্ঘদিন ব্যবহারের উপযোগী টেকসই বাইন্ডিং",
+        },
+        {
+          icon: "🚚",
+          title: "সারা বাংলাদেশে ডেলিভারি",
+          sub: "Cash on Delivery সুবিধায় দ্রুত পৌঁছে যাবে আপনার ঠিকানায়",
+        },
+      ];
+
+      let SELECTED = { 1: { qty: 1 } }; // বাংলা (id:1) ডিফল্ট সিলেক্টেড
+      let shipCost = 60,
+        shipMode = "in";
+
+      function taka(n) {
+        return "৳" + n;
+      }
+
+      function renderConfig() {
+        document.querySelectorAll("[data-text]").forEach((el) => {
+          const key = el.getAttribute("data-text");
+          if (CONFIG[key] !== undefined) el.textContent = CONFIG[key];
+        });
+        document.getElementById("urgencyMsg").textContent = CONFIG.urgencyText;
+
+        document.querySelectorAll("[data-img]").forEach((el) => {
+          const key = el.getAttribute("data-img");
+          if (key === "videoThumbnail") {
+            if (CONFIG.demoVideoId) {
+              el.src = `https://img.youtube.com/vi/${CONFIG.demoVideoId}/hqdefault.jpg`;
+            } else {
+              el.outerHTML = `<div class="img-placeholder w-full h-full">ভিডিও শীঘ্রই যুক্ত হবে</div>`;
+            }
+            return;
+          }
+          const url = CONFIG.images[key];
+          if (url) {
+            el.src = url;
+          } else {
+            el.outerHTML = `<div class="img-placeholder w-full h-full rounded-lg">ছবি শীঘ্রই যুক্ত হবে</div>`;
+          }
+        });
+
+        document.querySelectorAll("[data-phone-href]").forEach((el) => {
+          el.href = "tel:" + CONFIG.phone.replace(/[^0-9+]/g, "");
+        });
+        document.querySelectorAll("[data-whatsapp-href]").forEach((el) => {
+          let digits = CONFIG.whatsappPhone.replace(/[^0-9]/g, "");
+          if (digits.startsWith("0")) digits = "88" + digits;
+          el.href = "https://wa.me/" + digits;
+        });
+
+        const featuresGrid = document.getElementById("features-grid");
+        featuresGrid.innerHTML = FEATURES.map(
+          (f) => `
+          <div class="feat-card">
+            <div class="feat-icon-wrap">${f.icon}</div>
+            <div class="feat-title">${f.title}</div>
+            <div class="feat-sub">${f.sub}</div>
+          </div>`,
+        ).join("");
+      }
+
+      /* ══ PRODUCT GRID + CHECKOUT GRID ══ */
+      function renderProductGrid() {
+        const grid = document.getElementById("products-grid");
+        grid.innerHTML = PRODUCTS.map((p) => {
+          const id = p.id;
+          const isSel = !!SELECTED[id];
+          const thumb = p.img
+            ? `<img class="prod-img" src="${p.img}" alt="${p.name}" />`
+            : `<div class="img-placeholder w-full h-full">বইয়ের প্রচ্ছদ<br />শীঘ্রই</div>`;
+          const hasDetails = !!(p.desc || (p.features && p.features.length));
+          return `
+          <div class="prod-card${isSel ? " selected" : ""}" id="pcard-${id}">
+            <div class="prod-hot${isSel ? " show" : ""}" id="phot-${id}">✓ সিলেক্টেড</div>
+            <div class="prod-img-wrap"${p.img ? ` onclick="openLightbox('${p.img}', '${p.name.replace(/'/g, "\\'")}')"` : ""}>
+              ${thumb}
+            </div>
+            <div class="prod-body">
+              <h3 class="prod-name">${p.name}</h3>
+              <div class="prod-tag">🏷️ ${p.tag}</div>
+              <div class="prod-price-row">
+                ${p.orig ? `<span class="prod-orig">৳${p.orig}</span>` : ""}
+                <span class="prod-sale">৳${p.price}</span>
+              </div>
+              ${hasDetails ? `<button type="button" class="prod-detail-btn" onclick="openBookDetails(${id})">বিস্তারিত দেখুন</button>` : ""}
+              <button class="prod-add-btn${isSel ? " added" : ""}" id="pbtn-${id}" onclick="toggleFromCard(${id})">
+                <span>${isSel ? "✓ যোগ হয়েছে" : "🛒 কার্টে যোগ করুন"}</span>
+              </button>
+              <div class="prod-qty-ctrl${isSel ? " show" : ""}" id="pqc-${id}">
+                <button class="prod-qty-btn" onclick="chgQty(${id}, -1)">−</button>
+                <span class="prod-qty-val" id="pqv-${id}">${isSel ? SELECTED[id].qty : 1}</span>
+                <button class="prod-qty-btn" onclick="chgQty(${id}, 1)">+</button>
+              </div>
+            </div>
+          </div>`;
+        }).join("");
+      }
+
+      function renderCheckoutGrid() {
+        const grid = document.getElementById("co-cart-grid");
+        grid.innerHTML = PRODUCTS.map((p) => {
+          const id = p.id;
+          const isSel = !!SELECTED[id];
+          const qty = isSel ? SELECTED[id].qty : 1;
+          const thumb = p.img
+            ? `<img class="co-cart-img item-thumb-btn" src="${p.img}" alt="${p.name}" onerror="this.style.opacity=.4" onclick="event.stopPropagation(); openLightbox('${p.img}', '${p.name.replace(/'/g, "\\'")}')" />`
+            : `<div class="co-cart-img img-placeholder" style="font-size:9px">বই</div>`;
+          return `
+          <div class="co-cart-item${isSel ? " in-cart" : ""}" id="ci-${id}" onclick="cardRowClick(event, ${id})">
+            <input type="checkbox" class="co-cart-cb" id="ccb-${id}" ${isSel ? "checked" : ""} onchange="toggleItem(${id})" />
+            ${thumb}
+            <div class="co-cart-body">
+              <div class="co-cart-name">${p.name}</div>
+              <div class="co-cart-tag">🏷️ ${p.tag}</div>
+              <span class="co-cart-badge${isSel ? " show" : ""}" id="chot-${id}">✓ সিলেক্টেড</span>
+              <div class="co-cart-qw">
+                <button class="co-cart-qb" onclick="chgItemQty(${id}, -1)">−</button>
+                <input type="text" class="co-cart-qi" id="ciq-${id}" value="${qty}" min="1" onchange="renderSummary()" />
+                <button class="co-cart-qb" onclick="chgItemQty(${id}, 1)">+</button>
+              </div>
+            </div>
+            <div class="co-cart-right">
+              <span class="co-cart-total-label">Price</span>
+              <span class="co-cart-total" id="cit-${id}">৳${p.price * qty}</span>
+            </div>
+          </div>`;
+        }).join("");
+      }
+
+      function setSelected(id, selected) {
+        const cb = document.getElementById("ccb-" + id);
+        const ci = document.getElementById("ci-" + id);
+        const card = document.getElementById("pcard-" + id);
+        const pbtn = document.getElementById("pbtn-" + id);
+        const phot = document.getElementById("phot-" + id);
+        const chot = document.getElementById("chot-" + id);
+        if (cb) cb.checked = selected;
+        if (selected) {
+          const existingQty =
+            parseInt(document.getElementById("ciq-" + id)?.value) || 1;
+          SELECTED[id] = { qty: existingQty };
+          ci?.classList.add("in-cart");
+          card?.classList.add("selected");
+          phot?.classList.add("show");
+          chot?.classList.add("show");
+          if (pbtn) {
+            pbtn.classList.add("added");
+            const s = pbtn.querySelector("span");
+            if (s) s.textContent = "✓ যোগ হয়েছে";
+          }
+          document.getElementById("pqc-" + id)?.classList.add("show");
+        } else {
+          delete SELECTED[id];
+          ci?.classList.remove("in-cart");
+          card?.classList.remove("selected");
+          phot?.classList.remove("show");
+          chot?.classList.remove("show");
+          if (pbtn) {
+            pbtn.classList.remove("added");
+            const s = pbtn.querySelector("span");
+            if (s) s.textContent = "🛒 কার্টে যোগ করুন";
+          }
+          document.getElementById("pqc-" + id)?.classList.remove("show");
+        }
+        renderSummary();
+      }
+
+      function toggleFromCard(id) {
+        setSelected(id, !SELECTED[id]);
+      }
+      function toggleItem(id) {
+        const cb = document.getElementById("ccb-" + id);
+        setSelected(id, cb.checked);
+      }
+      function cardRowClick(e, id) {
+        if (e.target.closest(".co-cart-qw")) return;
+        if (e.target.tagName === "INPUT" && e.target.type === "checkbox")
+          return;
+        setSelected(id, !SELECTED[id]);
+      }
+      function chgQty(id, d) {
+        if (!SELECTED[id]) return;
+        SELECTED[id].qty = Math.max(1, SELECTED[id].qty + d);
+        document.getElementById("pqv-" + id).textContent = SELECTED[id].qty;
+        document.getElementById("ciq-" + id).value = SELECTED[id].qty;
+        renderSummary();
+      }
+      function chgItemQty(id, d) {
+        const el = document.getElementById("ciq-" + id);
+        const v = Math.max(1, (parseInt(el.value) || 1) + d);
+        el.value = v;
+        if (SELECTED[id]) SELECTED[id].qty = v;
+        document.getElementById("pqv-" + id) &&
+          (document.getElementById("pqv-" + id).textContent = v);
+        const p = getProduct(id);
+        document.getElementById("cit-" + id).textContent = "৳" + p.price * v;
+        renderSummary();
+      }
+
+      /* ══ REMOVE FROM ORDER SUMMARY ══ */
+      function removeFromSummary(id) {
+        setSelected(id, false);
+      }
+
+      function setShip(cost, mode) {
+        shipCost = cost;
+        shipMode = mode;
+        document
+          .getElementById("sl-i")
+          .classList.toggle("active", mode === "in");
+        document
+          .getElementById("sl-o")
+          .classList.toggle("active", mode === "out");
+        renderSummary();
+      }
+
+      function fmt(n) {
+        return n.toFixed(2);
+      }
+
+      function renderSummary() {
+        const tb = document.getElementById("otb");
+        const ids = Object.keys(SELECTED);
+        let sub = 0,
+          rows = "";
+        ids.forEach((id) => {
+          const p = getProduct(id);
+          const qty = parseInt(document.getElementById("ciq-" + id).value) || 1;
+          if (SELECTED[id]) SELECTED[id].qty = qty;
+          const ln = p.price * qty;
+          sub += ln;
+          const thumb = p.img
+            ? `<img class="oi-img" src="${p.img}" onerror="this.style.opacity=.3"/>`
+            : `<div class="oi-img img-placeholder" style="font-size:8px">বই</div>`;
+          rows += `<tr><td><div class="oi-wrap"><div class="oi-thumb-wrap"><button type="button" class="oi-remove-btn" onclick="removeFromSummary(${id})" aria-label="সরান" title="সরান">✕</button>${thumb}</div><div><div class="oi-nm">${p.name}</div><div class="oi-tag">🏷️ ${p.tag}</div><div class="oi-qty">× ${qty}</div></div></div></td><td>৳${fmt(ln)}</td></tr>`;
+          document.getElementById("cit-" + id).textContent =
+            "৳" + ln.toFixed(0);
+        });
+        if (!ids.length)
+          rows =
+            '<tr><td colspan="2" style="text-align:center;padding:20px;color:#94a3b8;font-size:14px">বই সিলেক্ট করুন</td></tr>';
+        tb.innerHTML = rows;
+        const tot = sub + shipCost;
+        document.getElementById("st").textContent = fmt(sub);
+        document.getElementById("dc").innerHTML =
+          shipMode === "in"
+            ? `<span class="saf">৳${fmt(shipCost)}</span>`
+            : `<span class="sap">৳${fmt(shipCost)}</span>`;
+        document.getElementById("dl").innerHTML =
+          shipMode === "in"
+            ? 'Delivery <span class="dl-area">(ঢাকার ভিতরে)</span>'
+            : 'Delivery <span class="dl-area">(ঢাকার বাহিরে)</span>';
+        document.getElementById("tt").textContent = fmt(tot);
+        document.getElementById("bt").textContent = fmt(tot);
+        const mbt = document.getElementById("mbt");
+        if (mbt) mbt.textContent = fmt(tot);
+        document.getElementById("stickyTotal").textContent = "৳" + fmt(tot);
+      }
+
+      /* ══ ORDER CONFIRMATION MODAL LOGIC ══ */
+      function showOrderConfirmation(order) {
+        document.getElementById("oc-order-number").textContent =
+          "#" + order.number;
+        document.getElementById("oc-order-date").textContent =
+          order.date.toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          });
+        document.getElementById("oc-order-total").textContent =
+          "৳" + fmt(order.total);
+        document.getElementById("oc-order-rows").innerHTML = order.items
+          .map(
+            (it) => `
+          <tr>
+            <td>${it.name} <span class="oc-row-tag">(🏷️ ${it.tag})</span> × ${it.qty}</td>
+            <td>৳${fmt(it.price * it.qty)}</td>
+          </tr>`,
+          )
+          .join("");
+        document.getElementById("oc-subtotal").textContent =
+          "৳" + fmt(order.subtotal);
+        document.getElementById("oc-shipping").textContent =
+          "৳" + fmt(order.shipping);
+        document.getElementById("oc-shipping-area").textContent =
+          "via " + order.shippingLabel;
+        document.getElementById("oc-total").textContent =
+          "৳" + fmt(order.total);
+        document.getElementById("oc-billing").innerHTML =
+          `${order.name}<br>${order.address}<br>${order.area}`;
+        document.getElementById("oc-phone").textContent = order.phone;
+        document.getElementById("order-confirm-overlay").classList.add("open");
+        document.body.style.overflow = "hidden";
+      }
+      function closeOrderConfirmation() {
+        document
+          .getElementById("order-confirm-overlay")
+          .classList.remove("open");
+        document.body.style.overflow = "";
+      }
+      document
+        .getElementById("order-confirm-overlay")
+        .addEventListener("click", (e) => {
+          if (e.target.id === "order-confirm-overlay") closeOrderConfirmation();
+        });
+
+      function stickyOrder() {
+        const form = document.getElementById("order-form");
+        const r = form.getBoundingClientRect();
+        const formInView = r.top < window.innerHeight * 0.6 && r.bottom > 0;
+        if (!formInView) {
+          form.scrollIntoView({ behavior: "smooth", block: "start" });
+          return;
+        }
+        placeOrder();
+      }
+
+      function placeOrder() {
+        let ok = true;
+        let firstErr = null;
+        const phonePattern = /^01[3-9]\d{8}$/;
+        [
+          { id: "fn", e: "fe" },
+          { id: "ph", e: "pe" },
+          { id: "ad", e: "ae" },
+        ].forEach((f) => {
+          const el = document.getElementById(f.id),
+            em = document.getElementById(f.e);
+          const val = el.value.trim();
+          if (!val || (f.id === "ph" && !phonePattern.test(val))) {
+            el.classList.add("err");
+            em.classList.add("show");
+            if (!firstErr) firstErr = el;
+            ok = false;
+          } else {
+            el.classList.remove("err");
+            em.classList.remove("show");
+          }
+        });
+        if (!ok) {
+          firstErr.scrollIntoView({ behavior: "smooth", block: "center" });
+          return;
+        }
+        if (!Object.keys(SELECTED).length) {
+          alert("অন্তত একটি বই সিলেক্ট করুন।");
+          return;
+        }
+        const items = Object.keys(SELECTED).map((id) => {
+          const qty = parseInt(document.getElementById("ciq-" + id).value) || 1;
+          const p = getProduct(id);
+          return { sku: p.sku, name: p.name, qty, price: p.price, tag: p.tag };
+        });
+        const subtotal = items.reduce((s, it) => s + it.price * it.qty, 0);
+        const orderData = {
+          number: Math.floor(30000 + Math.random() * 20000),
+          date: new Date(),
+          name: document.getElementById("fn").value.trim(),
+          phone: document.getElementById("ph").value.trim(),
+          address: document.getElementById("ad").value.trim(),
+          area: shipMode === "in" ? "ঢাকার ভিতরে" : "ঢাকার বাহিরে",
+          shippingLabel: shipMode === "in" ? "ঢাকার ভিতরে" : "ঢাকার বাহিরে",
+          items,
+          subtotal,
+          shipping: shipCost,
+          total: subtotal + shipCost,
+        };
+        try {
+          sessionStorage.setItem(
+            "ntrca_arts_book_order",
+            JSON.stringify(orderData),
+          );
+        } catch (e) {}
+        const btn = document.getElementById("pb");
+        btn.textContent = "⏳ প্রসেস হচ্ছে...";
+        btn.disabled = true;
+        btn.style.animation = "none";
+        setTimeout(() => {
+          btn.innerHTML =
+            '📚 অর্ডার করুন &nbsp;৳<span id="bt">' +
+            fmt(orderData.total) +
+            "</span>";
+          btn.disabled = false;
+          btn.style.animation = "";
+          showOrderConfirmation(orderData);
+        }, 900);
+      }
+
+      /* Phone: শুধু সংখ্যা, 880 → 0, সর্বোচ্চ ১১ ডিজিট */
+      document.getElementById("ph").addEventListener("input", function () {
+        let v = this.value.replace(/\D/g, "");
+        if (v.startsWith("880")) v = "0" + v.slice(3);
+        this.value = v.slice(0, 11);
+      });
+      ["fn", "ph", "ad"].forEach((id, i) => {
+        document.getElementById(id)?.addEventListener("input", function () {
+          const val = this.value.trim();
+          const isValid =
+            id === "ph" ? /^01[3-9]\d{8}$/.test(val) : val.length > 0;
+          if (isValid) {
+            this.classList.remove("err");
+            document
+              .getElementById(["fe", "pe", "ae"][i])
+              ?.classList.remove("show");
+          }
+        });
+      });
+
+      /* ══ IMAGE ZOOM LIGHTBOX ══ */
+      function openLightbox(src, alt) {
+        const overlay = document.getElementById("lightboxOverlay");
+        const img = document.getElementById("lightboxImg");
+        img.src = src;
+        img.alt = alt || "";
+        overlay.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+      function closeLightbox() {
+        document.getElementById("lightboxOverlay").classList.remove("active");
+        document.body.style.overflow = "";
+      }
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          closeLightbox();
+          closeBookDetails();
+        }
+      });
+
+      /* ══ BOOK DETAILS MODAL ══ */
+      function openBookDetails(id) {
+        const p = getProduct(id);
+        if (!p) return;
+        const cover = p.img
+          ? `<img src="${p.img}" alt="${p.name}" class="item-thumb-btn" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;margin-bottom:14px" onclick="openLightbox('${p.img}', '${p.name.replace(/'/g, "\\'")}')" />`
+          : "";
+        const featList =
+          p.features && p.features.length
+            ? `<div class="book-detail-feat-title">বইটির বৈশিষ্ট্য</div>
+             <ul class="book-detail-feat-list">${p.features.map((f) => `<li>${f}</li>`).join("")}</ul>`
+            : "";
+        document.getElementById("bookDetailContent").innerHTML = `
+          ${cover}
+          <h3>${p.name}</h3>
+          <div class="book-detail-tag">🏷️ ${p.tag}</div>
+          ${p.desc ? `<p class="book-detail-desc">${p.desc}</p>` : ""}
+          ${featList}
+        `;
+        document.getElementById("bookDetailOverlay").classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+      function closeBookDetails() {
+        document.getElementById("bookDetailOverlay").classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      /* ══ DEMO VIDEO PLAYBACK ══ */
+      function playDemoVideo() {
+        if (!CONFIG.demoVideoId) return;
+        const wrap = document.getElementById("video-player");
+        wrap.innerHTML = `<iframe
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/${CONFIG.demoVideoId}?autoplay=1&rel=0"
+          title="Product demo video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>`;
+      }
+
+      /* ══ URGENCY TIMER ══ */
+      (function () {
+        var K = "ntrcaArtsBooksTimer";
+        function getEnd() {
+          var v = null;
+          try {
+            v = localStorage.getItem(K);
+          } catch (e) {}
+          var now = Date.now();
+          if (v && +v > now) return +v;
+          var end =
+            now +
+            (Math.floor(Math.random() * 3) + 1) * 3600000 +
+            Math.random() * 1800000;
+          try {
+            localStorage.setItem(K, end);
+          } catch (e) {}
+          return end;
+        }
+        function pad(n) {
+          return String(n).padStart(2, "0");
+        }
+        function tick() {
+          var remaining = getEnd() - Date.now();
+          if (remaining < 0) {
+            try {
+              localStorage.removeItem(K);
+            } catch (e) {}
+            remaining = getEnd() - Date.now();
+          }
+          var set = function (id, val) {
+            var el = document.getElementById(id);
+            if (el) el.textContent = val;
+          };
+          set("ubh", pad(Math.floor(remaining / 3600000) % 24));
+          set("ubm", pad(Math.floor(remaining / 60000) % 60));
+          set("ubs", pad(Math.floor(remaining / 1000) % 60));
+        }
+        tick();
+        setInterval(tick, 1000);
+      })();
+
+      renderConfig();
+      renderProductGrid();
+      renderCheckoutGrid();
+      renderSummary();
+    </script>
+  </body>
+</html>
